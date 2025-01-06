@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+  }
+}
+
+@layer utilities {
+  .frost-light {
+    @apply bg-white/70 backdrop-blur-[20px] saturate-[180%] border-b border-white/10;
+  }
+
+  .frost-dark {
+    @apply bg-gray-950/70 backdrop-blur-[20px] saturate-[180%] border border-white/10;
+  }
+
+  .frost-card {
+    @apply bg-white/50 backdrop-blur-[12px] saturate-[160%] border border-white/20;
+  }
+}
