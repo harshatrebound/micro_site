@@ -6,9 +6,15 @@
   NODE_VERSION = "18.17.0"
   NPM_VERSION = "9.6.7"
   NEXT_TELEMETRY_DISABLED = "1"
+  NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY = "your_stripe_publishable_key"
+  STRIPE_SECRET_KEY = "your_stripe_secret_key"
+  DATABASE_URL = "your_database_url"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+  [plugins.inputs]
+    generateStaticRoutes = true
+    staticsDir = "public"
 
 [[redirects]]
   from = "/*"
