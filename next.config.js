@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  output: 'export',
   images: {
-    domains: ['source.unsplash.com', 'images.unsplash.com', 'cdn.prod.website-files.com'],
     unoptimized: true,
+    domains: ['images.unsplash.com']
   },
   reactStrictMode: true,
 }
