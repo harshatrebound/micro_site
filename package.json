@@ -21,6 +21,7 @@
     "@radix-ui/react-scroll-area": "^1.0.0",
     "@radix-ui/react-separator": "^1.0.0",
     "@radix-ui/react-slot": "^1.0.0",
+    "@netlify/plugin-nextjs": "^4.41.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "framer-motion": "^11.0.0",
